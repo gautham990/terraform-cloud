@@ -18,6 +18,7 @@ resource "aws_instance" "web1" {
 resource "aws_instance" "web2" {
   ami           = "ami-03faaf9cde2b38e9f"
   instance_type = "t2.micro"
-  tags - {
+  tags = {
     Name = "webserver2"
+  }
 }
