@@ -13,6 +13,7 @@ resource "aws_instance" "web1" {
   instance_type = "t2.micro"
   tags = {
     Name = "webserver1"
+    terraform = "Yes"
   }
 }
 resource "aws_instance" "web2" {
@@ -20,5 +21,6 @@ resource "aws_instance" "web2" {
   instance_type = "t2.micro"
   tags = {
     Name = "webserver2"
+    terraform = "Yes"
   }
 }
